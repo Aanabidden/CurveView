@@ -13,6 +13,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        let view = CurveView.init(frame: self.view.frame)
+        self.view.addSubview(view)
+        self.view.sendSubviewToBack(view)
     }
 
 
