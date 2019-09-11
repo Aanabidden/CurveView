@@ -31,7 +31,7 @@ class CurveView: UIView {
         let lightColor = UIColor.green
 
         let mountainColors = [darkColor.cgColor, lightColor.cgColor]
-        let mountainLocations: [CGFloat] = [1,0.5]
+        let mountainLocations: [CGFloat] = [1,0]
         guard let mountainGrad = CGGradient.init(colorsSpace: colorSpace,
                                                  colors: mountainColors as CFArray, locations: mountainLocations) else {
                                                     return
